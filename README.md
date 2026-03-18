@@ -24,10 +24,6 @@ Repeat the process to improve feature quality and predictive signal. LLM-extract
 
 Conclusion
 
-This project demonstrates an end-to-end pipeline for transforming unstructured clinical trial descriptions into structured features using a large language model. The extracted features can be integrated with traditional machine learning models to support predictive analysis. The workflow highlights the ability of LLMs to extract meaningful structured signals from text
+1. This project demonstrates an end-to-end pipeline for transforming unstructured clinical trial descriptions into structured features using a large language model. The extracted features can be integrated with traditional machine learning models to support predictive analysis.
 
-The effectiveness of combining LLM outputs with interpretable models
-
-The value of a model-driven feedback loop for iterative feature refinement
-
-👉 More broadly, this approach can be applied to text-heavy datasets in domains such as fraud detection, risk modeling, and compliance analytics, where critical signals are embedded in unstructured data.
+2. More broadly, this approach can be applied to text-heavy datasets in domains such as fraud detection, risk modeling, and compliance analytics, where critical signals are embedded in unstructured data.
