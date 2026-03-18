@@ -28,6 +28,7 @@ Iteration 2:
 991 features from 197 trials
 Improved hierarchical structure with granular categories
 Performance evaluation in progress
+<img width="1536" height="1024" alt="image_llm" src="https://github.com/user-attachments/assets/88bb4d3e-4a09-4f33-9258-a89688f48820" />
 
 Computational Setup
 Environment: UIUC Campus Cluster
