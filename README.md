@@ -18,20 +18,13 @@ We built an end-to-end pipeline that converts trial descriptions into structured
 
 🔁 Pipeline Overview
 
-Iteration
-Repeat the process to improve feature quality and predictive signal.
-
 Key Insight
 
-LLM-extracted structured features capture high-value predictive signals from narrative text and can be effectively integrated with traditional machine learning models.
+Repeat the process to improve feature quality and predictive signal. LLM-extracted structured features capture high-value predictive signals from narrative text and can be effectively integrated with traditional machine learning models.
 
 Conclusion
 
-This project demonstrates an end-to-end pipeline for transforming unstructured clinical trial descriptions into structured features using a large language model. The extracted features can be integrated with traditional machine learning models to support predictive analysis.
-
-The workflow highlights:
-
-The ability of LLMs to extract meaningful structured signals from text
+This project demonstrates an end-to-end pipeline for transforming unstructured clinical trial descriptions into structured features using a large language model. The extracted features can be integrated with traditional machine learning models to support predictive analysis. The workflow highlights the ability of LLMs to extract meaningful structured signals from text
 
 The effectiveness of combining LLM outputs with interpretable models
 
