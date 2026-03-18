@@ -4,37 +4,12 @@ Clinical trial datasets contain large volumes of unstructured text describing st
 
 In this project, we developed an LLM-augmented supervised learning pipeline that extracts structured attributes from clinical trial descriptions and converts them into predictive features.
 
-👉 Goal:
-Build a scalable system that transforms unstructured text into structured signals for predictive modeling.
-
 Data
 
 We used publicly available cancer clinical trial data from ClinicalTrials.gov.
 
-115,480 trials
-
-33 structured + unstructured columns
-
-Includes:
-
-trial status and dates
-
-enrollment and sponsor details
-
-intervention information
-
-eligibility criteria
-
-descriptive summaries
-
-After filtering ambiguous cases:
-
-79% Completed (Success)
-
-21% Terminated / Withdrawn / Suspended (Failure)
-
-👉 Task:
-Predict whether a clinical trial will be successfully completed.
+1. 115,480 trials
+2. 33 structured + unstructured columns
 
 Approach
 
@@ -42,38 +17,6 @@ We built an end-to-end pipeline that converts trial descriptions into structured
 <img width="1536" height="1024" alt="image_llm" src="https://github.com/user-attachments/assets/1137698e-c588-451e-a1c3-c672558651de" />
 
 🔁 Pipeline Overview
-
-Text Aggregation
-Combine multiple narrative fields into a unified trial description.
-
-LLM Feature Extraction
-Use Qwen 2.5-7B Instruct to extract structured attributes such as:
-
-study design
-
-intervention type
-
-patient population
-
-trial duration
-
-outcome measures
-
-Feature Representation
-Convert extracted attributes into machine-learning-ready features and augment with semantic embeddings.
-
-Predictive Modeling
-Train a Lasso Logistic Regression model to:
-
-predict trial outcomes
-
-identify important features
-
-Feature Importance Analysis
-Quantify which features contribute most to predictive performance.
-
-LLM Feedback Loop
-Use model insights to refine the LLM prompt and extract more granular, consistent features.
 
 Iteration
 Repeat the process to improve feature quality and predictive signal.
