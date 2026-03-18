@@ -1,4 +1,4 @@
-Iterative LLM-Guided Feature Extraction for Clinical Trial Outcome Prediction
+** Iterative LLM-Guided Feature Extraction for Clinical Trial Outcome Prediction**
 Overview
 This repository implements a feedback loop system for predicting clinical trial outcomes. The approach combines LLM-based structured feature extraction with supervised learning to iteratively improve feature quality and predictive performance.
 Methodology
