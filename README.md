@@ -1,47 +1,28 @@
-Iterative LLM-Guided Feature Extraction for Clinical Trial Outcome Prediction
-Overview
-This repository implements a feedback loop system for predicting clinical trial outcomes. The approach combines LLM-based structured feature extraction with supervised learning to iteratively improve feature quality and predictive performance.
-Methodology
-
-Technical Stack
-Models:
-
-Qwen 2.5 7B-Instruct for feature extraction
-Lasso Logistic Regression for prediction and feature selection
-<img width="1536" height="1024" alt="image_llm" src="https://github.com/user-attachments/assets/88bb4d3e-4a09-4f33-9258-a89688f48820" />
-Feature Engineering:
-
-One-hot encoding for LLM-extracted categorical features
-Sentence-BERT embeddings with PCA compression
-Unified feature matrix across trials
-
-Evaluation: ROC-AUC for model performance, feature importance for feedback
-Key Results
-Iteration 1:
-
-ROC-AUC: 0.610
-Feature contribution: LLM features 97.2%, embeddings 2.8%
-Top categories: study_design, intervention_type, patient_population
-
-Iteration 2:
-
-991 features from 197 trials
-Improved hierarchical structure with granular categories
-Performance evaluation in progress
-
-Computational Setup
-Environment: UIUC Campus Cluster
-
-GPU access via stat queue
-Workspace: /scratch/br36
-Development: Python, scikit-learn, Transformers, Jupyter
-
-Supplementary: Google Colab Pro for prototyping
+Predictive Modeling for Text-Rich Data Using a Supervised Learning Feedback Loop with LLMs
+Research Project – University of Illinois Urbana-Champaign
+Bhoomika.ravishankar@syf.com
+Objective
+Clinical trial datasets contain large amounts of unstructured text describing study design, interventions, eligibility criteria, and outcomes. Many of the factors influencing trial success are embedded in these narrative descriptions and are difficult to incorporate into traditional predictive models.
+In this project at the Statistics Dept of UIUC, we investigated whether large language models (LLMs) can automatically extract structured attributes from clinical trial descriptions and convert them into predictive features. Our goal was to build a scalable pipeline that transforms unstructured clinical trial text into structured variables that can be used in predictive modeling.
 Data
-Source: ClinicalTrials.gov cancer clinical trials
-Note: Data access requires appropriate institutional permissions.
-Dependencies
-bashpip install transformers torch scikit-learn pandas sentence-transformers
-Citation
-Research conducted under Professor Ruoqing at UIUC Department of Statistics.
-Computational resources: UIUC Campus Cluster.
+We used publicly available cancer data from ClinicalTrials.gov, which contains detailed information about clinical studies. The raw dataset contains 115,480 clinical trials and 33 columns spanning trial status, dates, enrollment, sponsor details, interventions, and descriptive text fields. This mix of structured and unstructured data makes it well-suited for predictive modeling with both classical ML features and LLM-derived features.
+Each trial record includes structured metadata and narrative descriptions such as:
+study summary and detailed description
+intervention information
+eligibility criteria
+disease conditions and study phase
+After filtering ambiguous statuses, our dataset contained:
+79% completed (success)
+21% terminated/withdrawn/suspended (failure) 
+The task was to predict whether a trial would be completed based on its description and characteristics.
+Approach
+We built an end-to-end pipeline that converts trial descriptions into structured predictors.
+<img width="1536" height="1024" alt="image_llm" src="https://github.com/user-attachments/assets/ac843e43-b2c9-40da-b231-d7d7ab8c675b" />
+Pipeline Overview
+Conclusion
+Based on initial model results, we refined the LLM prompt to extract more granular features related to:
+study design characteristics
+intervention mechanisms
+patient eligibility constraints
+operational trial logistics
+The refined prompt produced more consistent and informative structured features, demonstrating how model feedback can improve LLM-based feature extraction pipelines. This project demonstrates an end-to-end pipeline for transforming unstructured clinical trial descriptions into structured features using a large language model. The extracted features can be integrated with traditional machine learning models to support predictive analysis. The workflow illustrates how LLMs can assist in feature engineering for complex text-heavy datasets and how model feedback can guide iterative refinement of extracted variables.
