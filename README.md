@@ -15,7 +15,6 @@ Approach
 
 We built an end-to-end pipeline that converts trial descriptions into structured predictors using an iterative LLM–model feedback loop.
 <img width="1536" height="1024" alt="image_llm" src="https://github.com/user-attachments/assets/1137698e-c588-451e-a1c3-c672558651de" />
-
 🔁 Pipeline Overview
 
 Key Insight
