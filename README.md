@@ -1,4 +1,7 @@
 # Overview
+Link to colab notebook with outputs:
+https://colab.research.google.com/drive/1wijB5DZEg8d_zAywuaVC-Wf2pvXdIS4v#scrollTo=owBsntoEwMUD
+
 Clinical trial datasets contain large volumes of unstructured text describing study design, interventions, eligibility criteria, and outcomes. Many critical factors influencing trial success are embedded in these narratives and are not directly usable in traditional predictive models.
 
 In this project, we developed an LLM-augmented supervised learning pipeline that extracts structured attributes from clinical trial descriptions and converts them into predictive features.
