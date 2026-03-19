@@ -1,5 +1,5 @@
-Link to colab notebook with outputs:
-https://colab.research.google.com/drive/1wijB5DZEg8d_zAywuaVC-Wf2pvXdIS4v#scrollTo=owBsntoEwMUD
+# Link to colab notebook with outputs:
+- https://colab.research.google.com/drive/1wijB5DZEg8d_zAywuaVC-Wf2pvXdIS4v#scrollTo=owBsntoEwMUD
 
 # Predictive Modeling for Text-Rich Data Using a Supervised Learning Feedback Loop with LLMs
 
